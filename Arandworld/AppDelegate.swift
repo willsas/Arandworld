@@ -7,6 +7,8 @@
 
 import UIKit
 import CoreData
+import Amplify
+import AmplifyPlugins
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        configureAmplify()
         setupFirstScreen()
         return true
     }
@@ -23,6 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = initialVC
         window?.makeKeyAndVisible()
+    }
+    
+    private func configureAmplify(){
+        do {
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSS3StoragePlugin())
+            try Amplify.configure()
+            print("Success configure aws")
+        } catch let err {
+            print("Failed configure aws: \(err)")
+        }
     }
     
     
