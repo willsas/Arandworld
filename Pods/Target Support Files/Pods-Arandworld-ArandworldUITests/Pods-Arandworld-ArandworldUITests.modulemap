@@ -1,0 +1,6 @@
+framework module Pods_Arandworld_ArandworldUITests {
+  umbrella header "Pods-Arandworld-ArandworldUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

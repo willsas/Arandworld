@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05274F64E001D26F5F71A2AB /* Pods_ArandworldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DD21BEABF0AD056E50A3CD /* Pods_ArandworldTests.framework */; };
 		BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4580C265040DE00101C52 /* AppDelegate.swift */; };
 		BED45817265040DE00101C52 /* Arandworld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED45815265040DE00101C52 /* Arandworld.xcdatamodeld */; };
 		BED45819265040DF00101C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED45818265040DF00101C52 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 		BED45832265040DF00101C52 /* ArandworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED45831265040DF00101C52 /* ArandworldUITests.swift */; };
 		BED458472650414E00101C52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED458452650414D00101C52 /* LoginViewController.swift */; };
 		BED458482650414E00101C52 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED458462650414E00101C52 /* LoginViewController.xib */; };
+		C708685CE35604B0300995C2 /* Pods_Arandworld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B198366AD4C959C3ED3B1B4 /* Pods_Arandworld.framework */; };
+		CDB5082B1184AB7C248C6B20 /* Pods_Arandworld_ArandworldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1938092E1D28F974CA3BAB /* Pods_Arandworld_ArandworldUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084B95D354670918EF12807E /* Pods-Arandworld-ArandworldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arandworld-ArandworldUITests.debug.xcconfig"; path = "Target Support Files/Pods-Arandworld-ArandworldUITests/Pods-Arandworld-ArandworldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C1938092E1D28F974CA3BAB /* Pods_Arandworld_ArandworldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arandworld_ArandworldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3217F7F2F9D5F3B4798E3591 /* Pods-Arandworld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arandworld.release.xcconfig"; path = "Target Support Files/Pods-Arandworld/Pods-Arandworld.release.xcconfig"; sourceTree = "<group>"; };
+		4B198366AD4C959C3ED3B1B4 /* Pods_Arandworld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arandworld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6207C1B3ADB72B84F18AA728 /* Pods-ArandworldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArandworldTests.debug.xcconfig"; path = "Target Support Files/Pods-ArandworldTests/Pods-ArandworldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66B08960A291C3673DE904CC /* Pods-Arandworld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arandworld.debug.xcconfig"; path = "Target Support Files/Pods-Arandworld/Pods-Arandworld.debug.xcconfig"; sourceTree = "<group>"; };
+		9EAC0CA40C798387498B5C46 /* Pods-Arandworld-ArandworldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arandworld-ArandworldUITests.release.xcconfig"; path = "Target Support Files/Pods-Arandworld-ArandworldUITests/Pods-Arandworld-ArandworldUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BED45809265040DE00101C52 /* Arandworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arandworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED4580C265040DE00101C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED45816265040DE00101C52 /* Arandworld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arandworld.xcdatamodel; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		BED45833265040DF00101C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED458452650414D00101C52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BED458462650414E00101C52 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		ECA994784E89F9866DAFD540 /* Pods-ArandworldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArandworldTests.release.xcconfig"; path = "Target Support Files/Pods-ArandworldTests/Pods-ArandworldTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9DD21BEABF0AD056E50A3CD /* Pods_ArandworldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArandworldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C708685CE35604B0300995C2 /* Pods_Arandworld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05274F64E001D26F5F71A2AB /* Pods_ArandworldTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB5082B1184AB7C248C6B20 /* Pods_Arandworld_ArandworldUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41BDB727D55EA4019622A479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66B08960A291C3673DE904CC /* Pods-Arandworld.debug.xcconfig */,
+				3217F7F2F9D5F3B4798E3591 /* Pods-Arandworld.release.xcconfig */,
+				084B95D354670918EF12807E /* Pods-Arandworld-ArandworldUITests.debug.xcconfig */,
+				9EAC0CA40C798387498B5C46 /* Pods-Arandworld-ArandworldUITests.release.xcconfig */,
+				6207C1B3ADB72B84F18AA728 /* Pods-ArandworldTests.debug.xcconfig */,
+				ECA994784E89F9866DAFD540 /* Pods-ArandworldTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BB4E04A1DE6FED6C783247A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B198366AD4C959C3ED3B1B4 /* Pods_Arandworld.framework */,
+				0C1938092E1D28F974CA3BAB /* Pods_Arandworld_ArandworldUITests.framework */,
+				F9DD21BEABF0AD056E50A3CD /* Pods_ArandworldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BED45800265040DE00101C52 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				BED45825265040DF00101C52 /* ArandworldTests */,
 				BED45830265040DF00101C52 /* ArandworldUITests */,
 				BED4580A265040DE00101C52 /* Products */,
+				41BDB727D55EA4019622A479 /* Pods */,
+				5BB4E04A1DE6FED6C783247A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BED45836265040DF00101C52 /* Build configuration list for PBXNativeTarget "Arandworld" */;
 			buildPhases = (
+				82A8944593DF49A56A219427 /* [CP] Check Pods Manifest.lock */,
 				BED45805265040DE00101C52 /* Sources */,
 				BED45806265040DE00101C52 /* Frameworks */,
 				BED45807265040DE00101C52 /* Resources */,
+				C54134BA673D82213DCE7483 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BED45839265040DF00101C52 /* Build configuration list for PBXNativeTarget "ArandworldTests" */;
 			buildPhases = (
+				5C99A93879BAA28D642D7E31 /* [CP] Check Pods Manifest.lock */,
 				BED4581E265040DF00101C52 /* Sources */,
 				BED4581F265040DF00101C52 /* Frameworks */,
 				BED45820265040DF00101C52 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BED4583C265040DF00101C52 /* Build configuration list for PBXNativeTarget "ArandworldUITests" */;
 			buildPhases = (
+				E3CA810BEBAAAE1CA286B3F1 /* [CP] Check Pods Manifest.lock */,
 				BED45829265040DF00101C52 /* Sources */,
 				BED4582A265040DF00101C52 /* Frameworks */,
 				BED4582B265040DF00101C52 /* Resources */,
+				7FA53C089328547686531DC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C99A93879BAA28D642D7E31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArandworldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA53C089328547686531DC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arandworld-ArandworldUITests/Pods-Arandworld-ArandworldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arandworld-ArandworldUITests/Pods-Arandworld-ArandworldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arandworld-ArandworldUITests/Pods-Arandworld-ArandworldUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82A8944593DF49A56A219427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arandworld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54134BA673D82213DCE7483 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arandworld/Pods-Arandworld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arandworld/Pods-Arandworld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arandworld/Pods-Arandworld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CA810BEBAAAE1CA286B3F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arandworld-ArandworldUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BED45805265040DE00101C52 /* Sources */ = {
@@ -425,6 +574,7 @@
 		};
 		BED45837265040DF00101C52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66B08960A291C3673DE904CC /* Pods-Arandworld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +595,7 @@
 		};
 		BED45838265040DF00101C52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3217F7F2F9D5F3B4798E3591 /* Pods-Arandworld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +616,7 @@
 		};
 		BED4583A265040DF00101C52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6207C1B3ADB72B84F18AA728 /* Pods-ArandworldTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +639,7 @@
 		};
 		BED4583B265040DF00101C52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA994784E89F9866DAFD540 /* Pods-ArandworldTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +662,7 @@
 		};
 		BED4583D265040DF00101C52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084B95D354670918EF12807E /* Pods-Arandworld-ArandworldUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +683,7 @@
 		};
 		BED4583E265040DF00101C52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EAC0CA40C798387498B5C46 /* Pods-Arandworld-ArandworldUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
