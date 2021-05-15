@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4580C265040DE00101C52 /* AppDelegate.swift */; };
-		BED4580F265040DE00101C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4580E265040DE00101C52 /* SceneDelegate.swift */; };
-		BED45811265040DE00101C52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED45810265040DE00101C52 /* ViewController.swift */; };
-		BED45814265040DE00101C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED45812265040DE00101C52 /* Main.storyboard */; };
 		BED45817265040DE00101C52 /* Arandworld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED45815265040DE00101C52 /* Arandworld.xcdatamodeld */; };
 		BED45819265040DF00101C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED45818265040DF00101C52 /* Assets.xcassets */; };
 		BED4581C265040DF00101C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED4581A265040DF00101C52 /* LaunchScreen.storyboard */; };
 		BED45827265040DF00101C52 /* ArandworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED45826265040DF00101C52 /* ArandworldTests.swift */; };
 		BED45832265040DF00101C52 /* ArandworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED45831265040DF00101C52 /* ArandworldUITests.swift */; };
+		BED458472650414E00101C52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED458452650414D00101C52 /* LoginViewController.swift */; };
+		BED458482650414E00101C52 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED458462650414E00101C52 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 /* Begin PBXFileReference section */
 		BED45809265040DE00101C52 /* Arandworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arandworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED4580C265040DE00101C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BED4580E265040DE00101C52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BED45810265040DE00101C52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BED45813265040DE00101C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BED45816265040DE00101C52 /* Arandworld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arandworld.xcdatamodel; sourceTree = "<group>"; };
 		BED45818265040DF00101C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BED4581B265040DF00101C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		BED4582D265040DF00101C52 /* ArandworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArandworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED45831265040DF00101C52 /* ArandworldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArandworldUITests.swift; sourceTree = "<group>"; };
 		BED45833265040DF00101C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED458452650414D00101C52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BED458462650414E00101C52 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				BED4580C265040DE00101C52 /* AppDelegate.swift */,
-				BED4580E265040DE00101C52 /* SceneDelegate.swift */,
-				BED45810265040DE00101C52 /* ViewController.swift */,
-				BED45812265040DE00101C52 /* Main.storyboard */,
 				BED45818265040DF00101C52 /* Assets.xcassets */,
 				BED4581A265040DF00101C52 /* LaunchScreen.storyboard */,
 				BED4581D265040DF00101C52 /* Info.plist */,
 				BED45815265040DE00101C52 /* Arandworld.xcdatamodeld */,
+				BED458452650414D00101C52 /* LoginViewController.swift */,
+				BED458462650414E00101C52 /* LoginViewController.xib */,
 			);
 			path = Arandworld;
 			sourceTree = "<group>";
@@ -234,9 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED458482650414E00101C52 /* LoginViewController.xib in Resources */,
 				BED4581C265040DF00101C52 /* LaunchScreen.storyboard in Resources */,
 				BED45819265040DF00101C52 /* Assets.xcassets in Resources */,
-				BED45814265040DE00101C52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED45811265040DE00101C52 /* ViewController.swift in Sources */,
+				BED458472650414E00101C52 /* LoginViewController.swift in Sources */,
 				BED45817265040DE00101C52 /* Arandworld.xcdatamodeld in Sources */,
 				BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */,
-				BED4580F265040DE00101C52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BED45812265040DE00101C52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BED45813265040DE00101C52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BED4581A265040DF00101C52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YF2M6C4WM8;
 				INFOPLIST_FILE = Arandworld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillaSaskara.Arandworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YF2M6C4WM8;
 				INFOPLIST_FILE = Arandworld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillaSaskara.Arandworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
