@@ -6,23 +6,20 @@ target 'Arandworld' do
   use_frameworks!
 
   # Pods for Arandworld
-
-    	pod 'Amplify'
-	pod 'AmplifyPlugins/AWSS3StoragePlugin'
-    	pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
-
-
-
-
-
+#      pod 'ArandworldEngine', :path => '../arandworld-engine/'
+      pod 'ArandworldEngine', :git => 'https://github.com/willsas/arandworld-engine', :branch => 'main'
+      
 
   target 'ArandworldTests' do
     inherit! :search_paths
     # Pods for testing
   end
+  
 
   target 'ArandworldUITests' do
     # Pods for testing
   end
+  
+  
 
 end

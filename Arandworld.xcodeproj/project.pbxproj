@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		05274F64E001D26F5F71A2AB /* Pods_ArandworldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DD21BEABF0AD056E50A3CD /* Pods_ArandworldTests.framework */; };
+		BE5E921E265109B700FE592C /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E921D265109B700FE592C /* FactoryProtocol.swift */; };
+		BE5E9223265109C300FE592C /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E9222265109C300FE592C /* DependencyContainer.swift */; };
+		BE5E922826510AF100FE592C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E922726510AF100FE592C /* UserModel.swift */; };
 		BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4580C265040DE00101C52 /* AppDelegate.swift */; };
 		BED45817265040DE00101C52 /* Arandworld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED45815265040DE00101C52 /* Arandworld.xcdatamodeld */; };
 		BED45819265040DF00101C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED45818265040DF00101C52 /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		6207C1B3ADB72B84F18AA728 /* Pods-ArandworldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArandworldTests.debug.xcconfig"; path = "Target Support Files/Pods-ArandworldTests/Pods-ArandworldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66B08960A291C3673DE904CC /* Pods-Arandworld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arandworld.debug.xcconfig"; path = "Target Support Files/Pods-Arandworld/Pods-Arandworld.debug.xcconfig"; sourceTree = "<group>"; };
 		9EAC0CA40C798387498B5C46 /* Pods-Arandworld-ArandworldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arandworld-ArandworldUITests.release.xcconfig"; path = "Target Support Files/Pods-Arandworld-ArandworldUITests/Pods-Arandworld-ArandworldUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE5E921D265109B700FE592C /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
+		BE5E9222265109C300FE592C /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		BE5E922726510AF100FE592C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		BED45809265040DE00101C52 /* Arandworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arandworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED4580C265040DE00101C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED45816265040DE00101C52 /* Arandworld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arandworld.xcdatamodel; sourceTree = "<group>"; };
@@ -60,7 +66,7 @@
 		BED45833265040DF00101C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED458452650414D00101C52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BED458462650414E00101C52 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		BED4586A265061AE00101C52 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		BED4586A265061AE00101C52 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = Arandworld/amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		ECA994784E89F9866DAFD540 /* Pods-ArandworldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArandworldTests.release.xcconfig"; path = "Target Support Files/Pods-ArandworldTests/Pods-ArandworldTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9DD21BEABF0AD056E50A3CD /* Pods_ArandworldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArandworldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,14 +147,15 @@
 		BED4580B265040DE00101C52 /* Arandworld */ = {
 			isa = PBXGroup;
 			children = (
-				BED4580C265040DE00101C52 /* AppDelegate.swift */,
+				BED458772650E28E00101C52 /* Main */,
+				BED458782650E2D600101C52 /* Service */,
+				BED458732650E22F00101C52 /* Configs */,
+				BED458722650E22900101C52 /* Controller */,
+				BED458712650E22300101C52 /* ViewModel */,
+				BED458702650E21D00101C52 /* View */,
+				BED4586F2650E21700101C52 /* Model */,
 				BED45818265040DF00101C52 /* Assets.xcassets */,
 				BED4581A265040DF00101C52 /* LaunchScreen.storyboard */,
-				BED4581D265040DF00101C52 /* Info.plist */,
-				BED45815265040DE00101C52 /* Arandworld.xcdatamodeld */,
-				BED458452650414D00101C52 /* LoginViewController.swift */,
-				BED458462650414E00101C52 /* LoginViewController.xib */,
-				BED4586A265061AE00101C52 /* amplifyconfiguration.json */,
 			);
 			path = Arandworld;
 			sourceTree = "<group>";
@@ -169,6 +176,80 @@
 				BED45833265040DF00101C52 /* Info.plist */,
 			);
 			path = ArandworldUITests;
+			sourceTree = "<group>";
+		};
+		BED4586F2650E21700101C52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE5E922726510AF100FE592C /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BED458702650E21D00101C52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BED458462650414E00101C52 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BED458712650E22300101C52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BED458722650E22900101C52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BED458452650414D00101C52 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BED458732650E22F00101C52 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				BED4581D265040DF00101C52 /* Info.plist */,
+				BED4586A265061AE00101C52 /* amplifyconfiguration.json */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		BED458772650E28E00101C52 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BED4580C265040DE00101C52 /* AppDelegate.swift */,
+				BE5E921D265109B700FE592C /* FactoryProtocol.swift */,
+				BE5E9222265109C300FE592C /* DependencyContainer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BED458782650E2D600101C52 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BED4587B2650E84500101C52 /* Network */,
+				BED4587A2650E82400101C52 /* Storage */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BED4587A2650E82400101C52 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BED45815265040DE00101C52 /* Arandworld.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		BED4587B2650E84500101C52 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,7 +492,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED458472650414E00101C52 /* LoginViewController.swift in Sources */,
+				BE5E9223265109C300FE592C /* DependencyContainer.swift in Sources */,
 				BED45817265040DE00101C52 /* Arandworld.xcdatamodeld in Sources */,
+				BE5E921E265109B700FE592C /* FactoryProtocol.swift in Sources */,
+				BE5E922826510AF100FE592C /* UserModel.swift in Sources */,
 				BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

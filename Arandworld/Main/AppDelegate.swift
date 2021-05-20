@@ -7,8 +7,7 @@
 
 import UIKit
 import CoreData
-import Amplify
-import AmplifyPlugins
+import ArandworldEngine
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        configureAmplify()
         setupFirstScreen()
+        ArandWorldCore.shared.initiate(application)
         return true
     }
     
@@ -28,16 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
     }
     
-    private func configureAmplify(){
-        do {
-            try Amplify.add(plugin: AWSCognitoAuthPlugin())
-            try Amplify.add(plugin: AWSS3StoragePlugin())
-            try Amplify.configure()
-            print("Success configure aws")
-        } catch let err {
-            print("Failed configure aws: \(err)")
-        }
-    }
     
     
     // MARK: - Core Data stack
