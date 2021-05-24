@@ -20,6 +20,7 @@
 		BED458472650414E00101C52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED458452650414D00101C52 /* LoginViewController.swift */; };
 		BED458482650414E00101C52 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED458462650414E00101C52 /* LoginViewController.xib */; };
 		BED4586B265061AE00101C52 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BED4586A265061AE00101C52 /* amplifyconfiguration.json */; };
+		BEDB31EC265C165600C8D6E2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB31EB265C165600C8D6E2 /* LoginViewModel.swift */; };
 		C708685CE35604B0300995C2 /* Pods_Arandworld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B198366AD4C959C3ED3B1B4 /* Pods_Arandworld.framework */; };
 		CDB5082B1184AB7C248C6B20 /* Pods_Arandworld_ArandworldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1938092E1D28F974CA3BAB /* Pods_Arandworld_ArandworldUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		BED458452650414D00101C52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BED458462650414E00101C52 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		BED4586A265061AE00101C52 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = Arandworld/amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		BEDB31EB265C165600C8D6E2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ECA994784E89F9866DAFD540 /* Pods-ArandworldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArandworldTests.release.xcconfig"; path = "Target Support Files/Pods-ArandworldTests/Pods-ArandworldTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9DD21BEABF0AD056E50A3CD /* Pods_ArandworldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArandworldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,6 +199,7 @@
 		BED458712650E22300101C52 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BEDB31EB265C165600C8D6E2 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				BE5E921E265109B700FE592C /* FactoryProtocol.swift in Sources */,
 				BE5E922826510AF100FE592C /* UserModel.swift in Sources */,
 				BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */,
+				BEDB31EC265C165600C8D6E2 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

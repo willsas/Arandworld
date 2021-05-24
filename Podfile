@@ -6,8 +6,8 @@ target 'Arandworld' do
   use_frameworks!
 
   # Pods for Arandworld
-#      pod 'ArandworldEngine', :path => '../arandworld-engine/'
-      pod 'ArandworldEngine', :git => 'https://github.com/willsas/arandworld-engine', :branch => 'main'
+      pod 'ArandworldEngine', :path => '../arandworld-engine/'
+#      pod 'ArandworldEngine', :git => 'https://github.com/willsas/arandworld-engine', :branch => 'main'
       
 
   target 'ArandworldTests' do
