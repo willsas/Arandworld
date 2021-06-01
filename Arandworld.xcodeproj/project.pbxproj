@@ -11,6 +11,10 @@
 		BE5E921E265109B700FE592C /* FactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E921D265109B700FE592C /* FactoryProtocol.swift */; };
 		BE5E9223265109C300FE592C /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E9222265109C300FE592C /* DependencyContainer.swift */; };
 		BE5E922826510AF100FE592C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E922726510AF100FE592C /* UserModel.swift */; };
+		BE67978C2666A9B400489764 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE67978B2666A9B400489764 /* UIAlertController+Extension.swift */; };
+		BE6797922666ABAB00489764 /* MainARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6797902666ABAB00489764 /* MainARViewController.swift */; };
+		BE6797932666ABAB00489764 /* MainARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6797912666ABAB00489764 /* MainARViewController.xib */; };
+		BE67979B2666ABFA00489764 /* MainARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE67979A2666ABFA00489764 /* MainARViewModel.swift */; };
 		BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4580C265040DE00101C52 /* AppDelegate.swift */; };
 		BED45817265040DE00101C52 /* Arandworld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED45815265040DE00101C52 /* Arandworld.xcdatamodeld */; };
 		BED45819265040DF00101C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED45818265040DF00101C52 /* Assets.xcassets */; };
@@ -53,6 +57,10 @@
 		BE5E921D265109B700FE592C /* FactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProtocol.swift; sourceTree = "<group>"; };
 		BE5E9222265109C300FE592C /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		BE5E922726510AF100FE592C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		BE67978B2666A9B400489764 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		BE6797902666ABAB00489764 /* MainARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainARViewController.swift; sourceTree = "<group>"; };
+		BE6797912666ABAB00489764 /* MainARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainARViewController.xib; sourceTree = "<group>"; };
+		BE67979A2666ABFA00489764 /* MainARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainARViewModel.swift; sourceTree = "<group>"; };
 		BED45809265040DE00101C52 /* Arandworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arandworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED4580C265040DE00101C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED45816265040DE00101C52 /* Arandworld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arandworld.xcdatamodel; sourceTree = "<group>"; };
@@ -124,6 +132,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE67978A2666A98100489764 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BE67978B2666A9B400489764 /* UIAlertController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		BED45800265040DE00101C52 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +168,7 @@
 				BED458772650E28E00101C52 /* Main */,
 				BED458782650E2D600101C52 /* Service */,
 				BED458732650E22F00101C52 /* Configs */,
+				BE67978A2666A98100489764 /* Extension */,
 				BED458722650E22900101C52 /* Controller */,
 				BED458712650E22300101C52 /* ViewModel */,
 				BED458702650E21D00101C52 /* View */,
@@ -191,6 +208,7 @@
 		BED458702650E21D00101C52 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE6797912666ABAB00489764 /* MainARViewController.xib */,
 				BED458462650414E00101C52 /* LoginViewController.xib */,
 			);
 			path = View;
@@ -200,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				BEDB31EB265C165600C8D6E2 /* LoginViewModel.swift */,
+				BE67979A2666ABFA00489764 /* MainARViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -208,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				BED458452650414D00101C52 /* LoginViewController.swift */,
+				BE6797902666ABAB00489764 /* MainARViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -366,6 +386,7 @@
 				BED458482650414E00101C52 /* LoginViewController.xib in Resources */,
 				BED4581C265040DF00101C52 /* LaunchScreen.storyboard in Resources */,
 				BED45819265040DF00101C52 /* Assets.xcassets in Resources */,
+				BE6797932666ABAB00489764 /* MainARViewController.xib in Resources */,
 				BED4586B265061AE00101C52 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +517,10 @@
 			files = (
 				BED458472650414E00101C52 /* LoginViewController.swift in Sources */,
 				BE5E9223265109C300FE592C /* DependencyContainer.swift in Sources */,
+				BE67978C2666A9B400489764 /* UIAlertController+Extension.swift in Sources */,
 				BED45817265040DE00101C52 /* Arandworld.xcdatamodeld in Sources */,
+				BE67979B2666ABFA00489764 /* MainARViewModel.swift in Sources */,
+				BE6797922666ABAB00489764 /* MainARViewController.swift in Sources */,
 				BE5E921E265109B700FE592C /* FactoryProtocol.swift in Sources */,
 				BE5E922826510AF100FE592C /* UserModel.swift in Sources */,
 				BED4580D265040DE00101C52 /* AppDelegate.swift in Sources */,

@@ -34,9 +34,11 @@ PODS:
     - AWSCore (~> 2.24.0)
   - AWSS3 (2.24.1):
     - AWSCore (= 2.24.1)
+  - IQKeyboardManagerSwift (6.5.6)
 
 DEPENDENCIES:
   - ArandworldEngine (from `../arandworld-engine/`)
+  - IQKeyboardManagerSwift
 
 SPEC REPOS:
   trunk:
@@ -49,6 +51,7 @@ SPEC REPOS:
     - AWSMobileClient
     - AWSPluginsCore
     - AWSS3
+    - IQKeyboardManagerSwift
 
 EXTERNAL SOURCES:
   ArandworldEngine:
@@ -65,7 +68,8 @@ SPEC CHECKSUMS:
   AWSMobileClient: b39ba2044701c4d013814bab148550d10b47f8b3
   AWSPluginsCore: dcedd6826f38917f6b8bc11f261abb0fc0eb2977
   AWSS3: e5b5a1595e08c52bb321495d7122e1d331134317
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
 
-PODFILE CHECKSUM: 00d0fc077b150f78ac004e5e2b2427773c124b46
+PODFILE CHECKSUM: 48f60c4ab26768c53f2e1667eee7c1f7f6d890f7
 
 COCOAPODS: 1.9.0
