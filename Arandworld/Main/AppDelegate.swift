@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import ArandworldEngine
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,11 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupFirstScreen()
         ArandWorldCore.shared.initiate(application)
+        IQKeyboardManager.shared.enable = true
         return true
     }
     
     private func setupFirstScreen(){
-        let initialVC: UIViewController = LoginViewController()
+        let initialVC: UIViewController = MainARViewController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = initialVC
         window?.makeKeyAndVisible()
