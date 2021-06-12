@@ -16,15 +16,33 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var segmentedControlOutlet: UISegmentedControl!
     @IBOutlet weak var loginBtnOutlet: UIButton!
     
-    private let loginViewModel = LoginViewModel()
+    private let vm = LoginViewModel()
+    private lazy var coordinator = LoginCoordinator(vc: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextField()
         setupNavigationItem()
         setupSegmentedControl()
-        loginViewModel.delegate = self
+        setupLoginButton()
+        vm.delegate = self
         setupBlurryEffect()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        loginBtnOutlet.layer.cornerRadius = 2
+    }
+    
+    private func showOTPConfirmation() {
+        showInputDialog(title: "Confirm OTP",
+                        subtitle: "Input OTP that sent to \(vm.email ?? "Your Email")",
+                        inputPlaceholder: "OTP Code",
+                        inputKeyboardType: .numberPad,
+                        actionHandler:  { [vm] code in
+                            vm.requestConfirmRegister(code: code!)
+                        })
+        
     }
     
     private func setupNavigationItem() {
@@ -71,9 +89,11 @@ class LoginViewController: UIViewController {
     
     private func setupTextField() {
         emailTFOutlet.delegate = self
+        emailTFOutlet.keyboardType = .emailAddress
         userNameTFOutlet.delegate = self
         passwordTFOutlet.delegate = self
-        
+        passwordTFOutlet.isSecureTextEntry = true
+
         [emailTFOutlet, userNameTFOutlet, passwordTFOutlet].forEach { (tf) in
             tf?.backgroundColor = UIColor.black.withAlphaComponent(0.1)
             tf?.layer.borderWidth = 0
@@ -82,15 +102,90 @@ class LoginViewController: UIViewController {
         
     }
     
+    private func setupLoginButton() {
+        loginBtnOutlet.backgroundColor = .systemBlue
+        loginBtnOutlet.setTitleColor(.white, for: .normal)
+    }
+    
     @IBAction func loginButtonAction(_ sender: Any) {
-        loginViewModel.login()
+        displayIPActivityAlert()
+        switch segmentedControlOutlet.selectedSegmentIndex {
+        // login
+        case 0:
+            vm.requestSignin()
+        // register
+        case 1:
+            vm.requestRegister()
+        default:
+            break
+        }
+        
     }
 }
 
 extension LoginViewController: LoginViewModelDelegate {
-    func onLogin(onError: Error?) {
-        print("adfasfasdf, error: \(onError)")
+    
+    func signInResponse(isSuccess: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {return}
+            self.dismissIPActivityAlert()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if isSuccess {
+                    self.showTopSnackBarView(.success("Success Login"))
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.coordinator.dismissToMainARViewController()
+                    }
+                } else {
+                    self.showTopSnackBarView(.error("Failed to login"))
+                }
+            }
+         
+        }
+      
     }
+    
+    func registerResponse(isSuccess: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {return}
+            self.dismissIPActivityAlert()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if isSuccess {
+                    self.showOTPConfirmation()
+                } else {
+                    self.showTopSnackBarView(.error("Failed to register"))
+                }
+            }
+         
+        }
+    }
+    
+    func confirmRegisterResponse(isSuccess: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {return}
+            self.dismissIPActivityAlert()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if isSuccess {
+                    self.showTopSnackBarView(.success("Success Register"))
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.coordinator.dismissToMainARViewController()
+                    }
+                } else {
+                    self.showTopSnackBarView(.error("Failed to Confirm"))
+                }
+            }
+         
+        }
+    }
+    
+    func onError(msg: String) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {return}
+            self.dismissIPActivityAlert()
+            self.showTopSnackBarView(.error(msg))
+        }
+        
+    }
+    
 }
 
 
@@ -98,9 +193,11 @@ extension LoginViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         switch textField {
         case userNameTFOutlet:
-            loginViewModel.username = textField.text
+            vm.username = textField.text
         case passwordTFOutlet:
-            loginViewModel.password = textField.text
+            vm.password = textField.text
+        case emailTFOutlet:
+            vm.email = textField.text
         default:
             break
         }
